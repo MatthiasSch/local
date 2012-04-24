@@ -4,19 +4,19 @@ Created on Dec 7, 2011
 @author: matthias
 '''
 
-from enthought.traits.api import HasTraits, Property, cached_property, Event, \
+from etsproxy.traits.api import HasTraits, Property, cached_property, Event, \
     Array, Instance, Int, Directory, Range, on_trait_change, Bool, Trait, Constant, \
     Tuple, Interface, implements, Enum, List, Float
     
 
-from enthought.traits.ui.api import \
+from etsproxy.traits.ui.api import \
     View, Item, Group, ButtonEditor, RangeEditor, VGroup, HGroup, HSplit, Tabbed, \
     ModelView
     
-from enthought.mayavi.core.ui.api import MayaviScene, SceneEditor, \
+from etsproxy.mayavi.core.ui.api import MayaviScene, SceneEditor, \
     MlabSceneModel
     
-from enthought.mayavi.core.api import PipelineBase
+from etsproxy.mayavi.core.api import PipelineBase
 
 class CreasePattern(HasTraits):
     
